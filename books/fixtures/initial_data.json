@@ -1,0 +1,63 @@
+[
+    {
+        "model": "books.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Детектив",
+            "description": "Захватывающие истории"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 2,
+        "fields": {
+            "name": "Фантастика",
+            "description": "Научная и фантастическая литература"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 3,
+        "fields": {
+            "name": "Классика",
+            "description": "Мировая классическая литература"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields": {
+            "title": "Преступление и наказание",
+            "author": "Фёдор Достоевский",
+            "isbn": "978-5-17-118922-2",
+            "publication_year": 1866,
+            "publisher": "АСТ",
+            "pages": 672,
+            "genre": 3,
+            "description": "Роман",
+            "total_copies": 3,
+            "available_copies": 2,
+            "times_issued_total": 15
+        }
+    },
+    {
+        "model": "books.bookcopy",
+        "pk": 1,
+        "fields": {
+            "book": 1,
+            "inventory_number": "INV-001-01",
+            "status": "available",
+            "location": "Стеллаж А-3"
+        }
+    },
+    {
+        "model": "books.bookcopy",
+        "pk": 2,
+        "fields": {
+            "book": 1,
+            "inventory_number": "INV-001-02",
+            "status": "issued",
+            "location": "Стеллаж А-3"
+        }
+    }
+]
